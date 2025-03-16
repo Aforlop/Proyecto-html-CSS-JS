@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cri-TIC-lemon</title>
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+</head>
+<body>
+    <div class="grid-layout">
+        <audio src="sonidos/Musica_fondo.mp3" autoplay loop></audio>
+        <div class="caja c1" id="titulo">
+            <h1>Cri-TIC-lemon</h1>
+        </div>
+        <div class="caja c2">
+            <nav>
+                <a href="html/primera_pagina.html">Reseña videojuegos</a>
+                <a href="html/segunda_pagina.html">Reseña películas</a>
+                <a href="html/tercera_pagina.html">Páginas web</a>
+                <a href="html/cuarta_pagina.html">Mensaje u opiniones</a>
+                <a href="html/galería.html">Galería</a>
+            </nav>
+        </div>
+        <div class="caja c3">
+            <p>Inicio de sesión</p>
+        </div>
+
+        <div class="caja c4">
+            <table>
+                <form>
+                    <tr>
+                        <td>
+                            <label for="usuario">Nombre de usuario: </label>
+                            <input type="text" id="usuario" name="usuario" size="30" maxlength="20">
+                        </td>
+                        <td>
+                            <p>Contraseña: </p>
+                            <input type="password" id="contraseña" name="contraseña" size="30" maxlength="30">
+                        </td>
+                        <td>
+                            <input type="submit" value="Ingresar">
+                            <input type="reset" value="Borrar">
+                        </td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+
+        <div class="caja c5">     
+            <table>
+                <tr>
+                    <td>
+                        <details>
+                            <summary>Mensaje de bienvenida</summary>
+                            <p>Bienvenido a Cri-TIC-lemon, una página web basada en críticas a videojuegos y películas...</p>
+                        </details>
+                    </td>
+                    <td>
+                        <figure>
+                            <a href="imagenes/logo.jpg"><img src="imagenes/logo.jpg" id="img1"></a>
+                            <figcaption>Logo de Cri-TIC-lemon</figcaption>
+                        </figure>
+                    </td>
+                </tr>
+            </table>   
+        </div>
+
+        <div class="caja c6">
+            <video width="520" height="420" controls>
+                <source src="videos/video1.mp4">
+            </video>
+        </div>
+        <div class="caja c7">
+            <footer>Página realizada por Antonio Fornet, Sergio Medina y Luca Matonte</footer>
+        </div>
+    </div>
+    <script src="JS/eventos.js"></script>
+</body>
+</html>

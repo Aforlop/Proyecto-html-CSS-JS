@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opiniones</title>
+    <link rel="stylesheet" href="../CSS/style.css" type="text/css">
+
+</head>
+<body>
+    <div  class="grid-layout">
+        <audio src="../sonidos/Musica_fondo.mp3" autoplay="true" loop="true" controls="true"></audio>
+        <div class="caja c1">
+             <header><big><big><big><big>Cri-TIC-lemon</big></big></big></big></header> 
+        </div>
+        <hr width="100%">
+        <div class="caja c2">
+            <nav>
+                <a href="../index.html"><big><big>Pagina de inicio</big></big></a>
+                &nbsp
+                &nbsp
+                <a href="primera_pagina.html"><big><big>Reseña videojuegos</big></big></a>
+                &nbsp
+                &nbsp
+                <a href="segunda_pagina.html"><big><big>Reseña películas</big></big></a>
+                &nbsp
+                &nbsp
+                <a href="tercera_pagina.html"><big><big>Paginas web</big></big></a>
+                &nbsp
+                &nbsp
+                <a href="galería.html"><big><big>Galería</big></big></a>
+            </nav>
+        </div>
+        <br>
+        <div class="caja c3">
+            <p><big>A continuación le dejo opción a poder enviarnos opiniones o mensajes</big></p>
+        </div>
+        <br>
+        <div class="caja c4">
+            <table>
+                <form id="opinionform">
+                    <tr>
+                        <td>
+                            <p><big>Aquí nos puedes enviar opiniones sobre la pagina</big></p>
+                        </td>
+                        <td>
+                            <div id="opinion">
+                                <textarea id="textopinion" name="opinion" rows="6" cols="36" maxlength="300"></textarea>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="envio">Envío de la reseña: </label>
+                            <input type="date" id="envio" name="envio_reseña" value="2024-11-24" min="2024-01-01" max="2025-12-31">
+                            <button type="submit" id="enviar">Pulse aquí para enviar su reseña</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="telefono">Nº de teléfono del usuario: </label>
+                            <input type="tel" id="telefono" name="phone" maxlength="11" placeholder="123-456-789"><small>Formato: 123-456-789</small>
+                        </td>
+                    </tr>
+                </form>
+            </table>
+            <br>
+            <hr>
+            <br>
+            <table>
+                <form>
+                    <tr>
+                        <td>
+                            <p>
+                                <b>Del 1 al 5, ¿cuál sería la opinión sobre la pagina</b>
+                                <br>
+                                <input type="radio" value="1" name="opinion">1<br>
+                                <input type="radio" value="2" name="opinion">2<br>
+                                <input type="radio" value="3" name="opinion">3<br>
+                                <input type="radio" value="4" name="opinion">4<br>
+                                <input type="radio" value="5" name="opinion">5<br>
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                <b>¿Qué pagina cree que debería mejorar con prioridad?</b>
+                                <br>
+                                <input type="checkbox" value="Inicio">Inicio<br>
+                                <input type="checkbox" value="Videojuegos">Videojuegos<br>
+                                <input type="checkbox" value="Películas">Películas<br>
+                                <input type="checkbox" value="Paginas">Paginas web<br>
+                                <input type="checkbox" value="Reseñas">Reseñas<br>
+                                <input type="checkbox" value="Galería">Galería<br>
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                <b>Con respecto a las paginas web, ¿que le gustaría que hicieramos?</b>
+                                <br>
+                                <select name="web">
+                                    <option>Añadir más paginas web</option>
+                                    <option>Aportar más información sobre las paginas</option>
+                                    <option>Explicar como acceder a las paginas</option>
+                                </select>
+                            </p>
+                        </td>
+                        <td>
+                            <input type="submit" value="Enviar">
+                        </td>
+                        <td>
+                            <input type="reset" value="Borrar">
+                        </td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+        <div class="caja c7">
+            <footer><big><big>Pagina realizada por Antonio Fornet, Sergio Medina y Luca Matonte</big></big></footer>
+        </div>
+    </div>
+</body>
+<script src="../JS/eventos.js"></script>
+</html>
